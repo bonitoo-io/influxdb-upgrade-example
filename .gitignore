@@ -1,0 +1,4 @@
+upgrade.log
+data-v2
+influxd-upgrade-security.sh
+influxdb.toml
