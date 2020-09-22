@@ -17,8 +17,8 @@ git checkout feat/upgrade
 make docker-image-influx
 ```
 
-Following commands will execute InfluxDB 2.0 upgrade. We need to mount volumes with v1 datafiles and config files in 
-order to 
+Following commands will execute InfluxDB 2.0 upgrade. We need to mount volumes with v1 datafiles and config files.
+
 ```
 # create empty first, this files will be generated 
 touch upgrade.log
