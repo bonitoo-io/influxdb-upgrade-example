@@ -9,6 +9,14 @@ docker run -p 8086:8086 \
       influxdb -config /etc/influxdb/influxdb.conf
 ```
 
+
+First we need to build docker image `influxdb:dev` with latest InfluxDB `feat/upgrade` branch
+```
+git clone git@github.com:vlastahajek/influxdb.git
+git checkout feat/upgrade
+make docker-image-influx
+```
+
 Following commands will execute InfluxDB 2.0 upgrade. We need to mount volumes with v1 datafiles and config files in 
 order to 
 ```
