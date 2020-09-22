@@ -1,7 +1,7 @@
 ### InfluxDB V1 Upgrade process
 
 Let's assume that we have running InfluxDB 1.X in Docker.
-Cinfugration `influxdb.conf` and `data-v1` are stored in the local directory. 
+Configration `influxdb.conf` and `data-v1` are stored in the local directory. 
 ```
 docker run -p 8086:8086 \
       -v $PWD/data-v1:/var/lib/influxdb \
